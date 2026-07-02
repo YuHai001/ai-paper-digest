@@ -1,0 +1,563 @@
+{
+  "report": {
+    "title": "AI/机器学习/大模型每日论文进展",
+    "language": "zh-CN",
+    "max_papers": 15,
+    "timezone": "Asia/Shanghai"
+  },
+  "arxiv": {
+    "categories": [
+      "cs.AI",
+      "cs.LG",
+      "cs.CL",
+      "cs.CV",
+      "cs.RO",
+      "cs.NE",
+      "cs.IR",
+      "cs.HC",
+      "cs.SE",
+      "stat.ML",
+      "eess.IV"
+    ],
+    "lookback_days": 3,
+    "max_results": 100,
+    "pause_seconds": 3.0
+  },
+  "sources": {
+    "enabled": [
+      "arxiv",
+      "openalex",
+      "crossref",
+      "semantic_scholar",
+      "europe_pmc",
+      "journal_watchlist"
+    ],
+    "max_results": 100,
+    "request_pause_seconds": 2.0,
+    "external_queries": [
+      "\"artificial intelligence\"",
+      "\"machine learning\"",
+      "\"deep learning\"",
+      "\"large language model\"",
+      "LLM \"language model\"",
+      "\"foundation model\"",
+      "\"generative AI\"",
+      "\"transformer\" \"neural network\"",
+      "\"diffusion model\"",
+      "\"multimodal\" \"machine learning\"",
+      "\"vision-language model\"",
+      "\"retrieval-augmented generation\"",
+      "RAG \"language model\"",
+      "\"AI agent\"",
+      "\"multi-agent\" \"large language model\"",
+      "\"reinforcement learning\"",
+      "\"robot learning\"",
+      "\"embodied AI\"",
+      "\"embodied intelligence\"",
+      "\"world model\" robot",
+      "\"humanoid\" \"learning\"",
+      "\"AI alignment\"",
+      "\"AI safety\"",
+      "\"LLM evaluation\"",
+      "\"model compression\" \"deep learning\"",
+      "\"efficient inference\" \"large language model\"",
+      "\"distributed training\" \"machine learning\""
+    ],
+    "openalex": {
+      "mailto": ""
+    },
+    "semantic_scholar": {},
+    "journal_watchlist": {
+      "max_results_per_journal": 3,
+      "max_results": 120,
+      "journals": [
+        {
+          "name": "Nature",
+          "publisher": "Springer Nature",
+          "group": "general",
+          "issn": [
+            "1476-4687",
+            "0028-0836"
+          ],
+          "tags": [
+            "high-impact",
+            "multidisciplinary"
+          ]
+        },
+        {
+          "name": "Science",
+          "publisher": "AAAS",
+          "group": "general",
+          "issn": [
+            "1095-9203",
+            "0036-8075"
+          ],
+          "tags": [
+            "high-impact",
+            "multidisciplinary"
+          ]
+        },
+        {
+          "name": "Science Advances",
+          "publisher": "AAAS",
+          "group": "general",
+          "issn": [
+            "2375-2548"
+          ],
+          "tags": [
+            "open access",
+            "multidisciplinary"
+          ]
+        },
+        {
+          "name": "Proceedings of the National Academy of Sciences",
+          "publisher": "National Academy of Sciences",
+          "group": "general",
+          "issn": [
+            "1091-6490",
+            "0027-8424"
+          ],
+          "tags": [
+            "multidisciplinary"
+          ]
+        },
+        {
+          "name": "Nature Machine Intelligence",
+          "publisher": "Springer Nature",
+          "group": "ai-core",
+          "issn": [
+            "2522-5839"
+          ],
+          "tags": [
+            "AI",
+            "machine learning"
+          ]
+        },
+        {
+          "name": "Nature Methods",
+          "publisher": "Springer Nature",
+          "group": "ai-applications",
+          "issn": [
+            "1548-7105",
+            "1548-7091"
+          ],
+          "tags": [
+            "AI for science",
+            "methods"
+          ]
+        },
+        {
+          "name": "Nature Communications",
+          "publisher": "Springer Nature",
+          "group": "general",
+          "issn": [
+            "2041-1723"
+          ],
+          "tags": [
+            "open access",
+            "multidisciplinary"
+          ]
+        },
+        {
+          "name": "Communications Engineering",
+          "publisher": "Springer Nature",
+          "group": "robotics-systems",
+          "issn": [
+            "2731-3395"
+          ],
+          "tags": [
+            "engineering",
+            "robotics"
+          ]
+        },
+        {
+          "name": "Communications Computer and Information Science",
+          "publisher": "Springer Nature",
+          "group": "computer-science",
+          "issn": [
+            "1865-0937",
+            "1865-0929"
+          ],
+          "tags": [
+            "computer science"
+          ]
+        },
+        {
+          "name": "Journal of Machine Learning Research",
+          "publisher": "JMLR",
+          "group": "ml-core",
+          "issn": [
+            "1533-7928"
+          ],
+          "tags": [
+            "machine learning",
+            "theory",
+            "methods"
+          ]
+        },
+        {
+          "name": "Transactions on Machine Learning Research",
+          "publisher": "TMLR",
+          "group": "ml-core",
+          "issn": [
+            "2835-8856"
+          ],
+          "tags": [
+            "machine learning",
+            "open review"
+          ]
+        },
+        {
+          "name": "Machine Learning",
+          "publisher": "Springer Nature",
+          "group": "ml-core",
+          "issn": [
+            "1573-0565",
+            "0885-6125"
+          ],
+          "tags": [
+            "machine learning"
+          ]
+        },
+        {
+          "name": "Artificial Intelligence",
+          "publisher": "Elsevier",
+          "group": "ai-core",
+          "issn": [
+            "1872-7921",
+            "0004-3702"
+          ],
+          "tags": [
+            "artificial intelligence"
+          ]
+        },
+        {
+          "name": "AI Open",
+          "publisher": "Elsevier",
+          "group": "ai-core",
+          "issn": [
+            "2666-6510"
+          ],
+          "tags": [
+            "artificial intelligence",
+            "open access"
+          ]
+        },
+        {
+          "name": "IEEE Transactions on Pattern Analysis and Machine Intelligence",
+          "publisher": "IEEE",
+          "group": "vision-ml",
+          "issn": [
+            "1939-3539",
+            "0162-8828"
+          ],
+          "tags": [
+            "computer vision",
+            "machine learning"
+          ]
+        },
+        {
+          "name": "IEEE Transactions on Neural Networks and Learning Systems",
+          "publisher": "IEEE",
+          "group": "ml-core",
+          "issn": [
+            "2162-2388",
+            "2162-237X"
+          ],
+          "tags": [
+            "neural networks",
+            "learning systems"
+          ]
+        },
+        {
+          "name": "IEEE Transactions on Artificial Intelligence",
+          "publisher": "IEEE",
+          "group": "ai-core",
+          "issn": [
+            "2691-4581"
+          ],
+          "tags": [
+            "artificial intelligence"
+          ]
+        },
+        {
+          "name": "IEEE Transactions on Knowledge and Data Engineering",
+          "publisher": "IEEE",
+          "group": "data-ai",
+          "issn": [
+            "1558-2191",
+            "1041-4347"
+          ],
+          "tags": [
+            "data mining",
+            "knowledge",
+            "AI systems"
+          ]
+        },
+        {
+          "name": "IEEE Robotics and Automation Letters",
+          "publisher": "IEEE",
+          "group": "embodied-ai",
+          "issn": [
+            "2377-3766"
+          ],
+          "tags": [
+            "robotics",
+            "embodied intelligence"
+          ]
+        },
+        {
+          "name": "IEEE Transactions on Robotics",
+          "publisher": "IEEE",
+          "group": "embodied-ai",
+          "issn": [
+            "1941-0468",
+            "1552-3098"
+          ],
+          "tags": [
+            "robotics",
+            "embodied intelligence"
+          ]
+        },
+        {
+          "name": "The International Journal of Robotics Research",
+          "publisher": "SAGE",
+          "group": "embodied-ai",
+          "issn": [
+            "1741-3176",
+            "0278-3649"
+          ],
+          "tags": [
+            "robotics"
+          ]
+        },
+        {
+          "name": "Science Robotics",
+          "publisher": "AAAS",
+          "group": "embodied-ai",
+          "issn": [
+            "2470-9476"
+          ],
+          "tags": [
+            "robotics",
+            "embodied intelligence"
+          ]
+        },
+        {
+          "name": "Autonomous Robots",
+          "publisher": "Springer Nature",
+          "group": "embodied-ai",
+          "issn": [
+            "1573-7527",
+            "0929-5593"
+          ],
+          "tags": [
+            "robotics",
+            "autonomy"
+          ]
+        },
+        {
+          "name": "ACM Computing Surveys",
+          "publisher": "ACM",
+          "group": "survey",
+          "issn": [
+            "1557-7341",
+            "0360-0300"
+          ],
+          "tags": [
+            "survey",
+            "computer science"
+          ]
+        },
+        {
+          "name": "ACM Transactions on Intelligent Systems and Technology",
+          "publisher": "ACM",
+          "group": "ai-core",
+          "issn": [
+            "2157-6912",
+            "2157-6904"
+          ],
+          "tags": [
+            "AI",
+            "intelligent systems"
+          ]
+        },
+        {
+          "name": "Transactions of the Association for Computational Linguistics",
+          "publisher": "MIT Press",
+          "group": "nlp",
+          "issn": [
+            "2307-387X"
+          ],
+          "tags": [
+            "NLP",
+            "language models"
+          ]
+        },
+        {
+          "name": "Computational Linguistics",
+          "publisher": "MIT Press",
+          "group": "nlp",
+          "issn": [
+            "1530-9312",
+            "0891-2017"
+          ],
+          "tags": [
+            "NLP"
+          ]
+        },
+        {
+          "name": "Data Mining and Knowledge Discovery",
+          "publisher": "Springer Nature",
+          "group": "data-ai",
+          "issn": [
+            "1573-756X",
+            "1384-5810"
+          ],
+          "tags": [
+            "data mining",
+            "machine learning"
+          ]
+        },
+        {
+          "name": "Pattern Recognition",
+          "publisher": "Elsevier",
+          "group": "vision-ml",
+          "issn": [
+            "1873-5142",
+            "0031-3203"
+          ],
+          "tags": [
+            "pattern recognition",
+            "computer vision"
+          ]
+        },
+        {
+          "name": "Computer Vision and Image Understanding",
+          "publisher": "Elsevier",
+          "group": "vision-ml",
+          "issn": [
+            "1090-235X",
+            "1077-3142"
+          ],
+          "tags": [
+            "computer vision"
+          ]
+        }
+      ]
+    }
+  },
+  "queries": [
+    "all:\"artificial intelligence\"",
+    "all:\"machine learning\"",
+    "all:\"deep learning\"",
+    "all:\"neural network\"",
+    "all:\"large language model\"",
+    "all:LLM",
+    "all:\"foundation model\"",
+    "all:\"generative AI\"",
+    "all:transformer AND all:\"machine learning\"",
+    "all:\"diffusion model\"",
+    "all:\"multimodal\" AND all:\"machine learning\"",
+    "all:\"vision-language model\"",
+    "all:\"retrieval-augmented generation\"",
+    "all:RAG AND all:\"language model\"",
+    "all:\"AI agent\"",
+    "all:\"multi-agent\" AND all:\"large language model\"",
+    "all:\"reinforcement learning\"",
+    "all:\"robot learning\"",
+    "all:\"embodied AI\"",
+    "all:\"embodied intelligence\"",
+    "all:\"world model\" AND all:robot",
+    "all:\"humanoid\" AND all:\"learning\"",
+    "all:\"AI safety\"",
+    "all:\"AI alignment\"",
+    "all:\"LLM evaluation\"",
+    "all:\"reasoning\" AND all:\"large language model\"",
+    "all:\"tool use\" AND all:\"language model\"",
+    "all:\"model compression\" AND all:\"deep learning\"",
+    "all:\"efficient inference\" AND all:\"large language model\"",
+    "all:\"distributed training\" AND all:\"machine learning\""
+  ],
+  "ranking": {
+    "strong_terms": [
+      "artificial intelligence",
+      "machine learning",
+      "deep learning",
+      "neural network",
+      "large language model",
+      "llm",
+      "foundation model",
+      "generative ai",
+      "transformer",
+      "diffusion model",
+      "multimodal",
+      "vision-language",
+      "vlm",
+      "retrieval-augmented generation",
+      "rag",
+      "reinforcement learning",
+      "ai agent",
+      "multi-agent",
+      "embodied ai",
+      "embodied intelligence",
+      "robot learning",
+      "world model",
+      "ai safety",
+      "ai alignment",
+      "rlhf",
+      "reasoning",
+      "tool use",
+      "computer vision",
+      "natural language processing",
+      "nlp"
+    ],
+    "support_terms": [
+      "benchmark",
+      "dataset",
+      "evaluation",
+      "sota",
+      "state-of-the-art",
+      "pretraining",
+      "fine-tuning",
+      "instruction tuning",
+      "chain-of-thought",
+      "in-context learning",
+      "prompting",
+      "agentic",
+      "planning",
+      "policy",
+      "manipulation",
+      "navigation",
+      "sim-to-real",
+      "humanoid",
+      "robotics",
+      "language model",
+      "vision language",
+      "text-to-image",
+      "text-to-video",
+      "model compression",
+      "quantization",
+      "distillation",
+      "efficient inference",
+      "distributed training",
+      "serving",
+      "alignment",
+      "hallucination",
+      "jailbreak",
+      "red teaming",
+      "trustworthy ai",
+      "interpretability",
+      "explainability"
+    ],
+    "exclude_terms": [
+      "artificial insemination",
+      "ai alloy",
+      "machine tool",
+      "learning disability",
+      "neural crest",
+      "language acquisition in children"
+    ],
+    "minimum_score": 4
+  }
+}

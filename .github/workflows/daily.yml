@@ -1,0 +1,42 @@
+name: Daily AI paper digest
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "30 0 * * *"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: daily-ai-paper-digest
+  cancel-in-progress: false
+
+jobs:
+  digest:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install project
+        run: python -m pip install -e .
+
+      - name: Generate digest
+        run: ai-paper-digest --allow-fetch-failure
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_MODEL: ${{ vars.OPENAI_MODEL }}
+
+      - name: Commit report
+        run: |
+          git config user.name "paper-digest-bot"
+          git config user.email "paper-digest-bot@users.noreply.github.com"
+          git add reports data
+          git commit -m "Add daily AI paper digest" || exit 0
+          git push
